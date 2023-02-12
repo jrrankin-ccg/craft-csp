@@ -36,6 +36,7 @@ class Settings extends Model
     public $workerSrc = [];
     public $manifestSrc = [];
     public $navigateTo = [];
+    public $prefetchSrc = [];
 
     /**
      * @inheritdoc
