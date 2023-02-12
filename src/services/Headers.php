@@ -100,6 +100,10 @@ class Headers extends Component
             $csp['navigate-to'] = $settings->navigateTo;
         }
 
+        if (!empty($settings->prefetchSrc)) {
+            $csp['prefetch-src'] = $settings->prefetchSrc;
+        }
+
         foreach ($this->nonces as $type => $nonceList) {
             foreach ($nonceList as $nonce) {
                 $csp[$type][] = "'nonce-" . $nonce . "'";
